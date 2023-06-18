@@ -1,0 +1,107 @@
+Day 11: 6/15/23
+Accomplished:
+    1. Learned the value of using breakpoints and debugging step by step... Embarrassing it took me 6 months after graduating with a acs degree 
+       to realize this.
+    2. I think I got the explicit waits to work, I just need to check up on the element to be selected one.
+
+Day 10: 6/13/23
+Tasks:
+    1. Complete changing the computer to use it's ssd.
+    2. Correctly implement explicit wait.
+Accomplished:
+    1. Completed changing my computer to use ssd. 
+Notes:
+    1. Fuuuuuuuuck SAAAAAAKE. I've realized another tedieous thing about web automation is that the website appears to be constantly changing it's 
+       code and I have to re-update it so it can work again. This is going to tremendously slow my progress for this project. This makes me think about
+       what project ideas are even worth doing. Especially considering the larger my project grows, the more I will have to re-factor it... 
+
+Day 9: 6/12/23
+Tasks:
+    1. Move everything to the ssd drive...
+    2. Correctly implement explicit wait.
+
+Day 8: 6/11/23
+Tasks: 
+    1. Did not do it right as I previously thought. Get selenium to get to second page after going through all 25 stocks.
+    2. Start implementing explicit wait instead of time.sleep.
+Accomplished:
+    1. Task 1, although it only clicks the first stock and is stuck there, although I noticed this "getting stuck" seems to happen seemingly randomly
+       and unfortunatly quite often so it's possible it just got stuck like the other situations. It may be solved by correctly implementing explicit wait
+       but I'm not sure.
+    2. Implemented explicit wait although I suspect not correctly heh heh. Lets just say I got to fix that.
+Notes: 
+    1. I realize that making every smallest step go as fast as possible one at a time is much better than creating a giant slow proccess that takes a long 
+       time to run.
+    2. I've become distrought by the work recently, but as I've learned from the gym, these periods of struggle is when you grow the most.
+
+Day 7: 6/10/23
+Tasks:
+    1. Complete day 4 task 6. "Use webdriver wait instead of time.sleep"
+Accomplished:
+    1. Discovered things were more complicated than I thought. 
+
+Day 6: 6/9/23
+Tasks: 
+    1. Continue on with day 4 tasks.
+Accomplished:
+    1. Day 4, task 5
+Notes:
+    1. Discovered that there is an implicit wait and an explicit wait. Apparently implicit wait's are not commonly used and considered by many to be
+       dumb. That said explicit wait seems to be more complicated than I thought. I originially thought I would just put something liek "explicitWait(2)"
+       but it is actually conditional and will take some time. So I will do this task tmrw or the day after.
+
+Day 5: 6/8/23
+Tasks: 
+    1. Continue on with day 4 tasks. Embarrassingly low progress lol.
+    2. Make program go full screen at start.
+Accomplished:
+    1. Completed task 2 of day 4. Task 3 of day 4 isn't that interesting and I don't feel like it so skip for now. Same with task 4 of day 4. 
+       Still need to do task 5 and 6 of day 4.
+    2. Completed task 2. 
+Notes:
+    1. Discovered that I can do other things on my computer while Selenium runs. Silly me. 
+    2. I'm only doing a little bit day by day, but I actually made a decent amount of progress thinking about it.
+
+Day 4: 6/7/23
+Tasks: 
+    1. Rearange plan.txt folder so new day is on top instead of bottom.
+    2. Make code save ticker symbol and PE ratios to spreadsheet.
+    3. Don't want to sit around waiting for it to finish. Should add some way to count the time. Perhaps put a timestamp at the start and end of the program.
+       I also need a way to make sure it went through successfully. Guess I'll move saving the ticker symbol above this task.
+    4. Reduce 5 seconds to something less that still works. Track the times.
+    5. Make code move onto second page and etc.
+    6. Use webdriver wait instead of time.sleep.
+Accomplished:
+    1. Task 1 completed. Nothing much else to say here.
+Notes:
+    1. Including a notes section from now on. 
+    2. I took L Theanine today. Will see if it increases my work output.    
+
+Day 3: 6/5/23
+Tasks:
+    1. Change it so that instead of clicking just the first stock, it clicks through every stock on the page.
+Accomplished:
+    Finished Task 1. Didn't do much, but am tired today lol. Tested what I planned on Day 2. Worked sometimes and didn't work other times. I think I'm going to look
+    into the error in more detail when when I have time, perhaps Sunday when I don't have work. Also have some plans on what to add on to the project. Firstly reduce 
+    5 seconds to something less. Not sure how much less, but I'll see how low I can go tmrw. Secondly I want to make the code move onto the second page after the 25th 
+    stock (each page has 25 stocks). Lastly I wanna add all the tickers along with their PE ratios onto a spread sheet, but this will be done a bit later, I'll do 
+    this on day 5 or 6 probably.
+
+Day 2: 6/4/23
+Tasks:
+    1. Click on the United States checkbox in the country selections and click filter
+    2. Click on the first stock to go to that stock's webpage
+Accomplished:
+    Finished Task 1 and 2. I learned that I need to actually scroll down the page to be able to get selenium to click on an element. Makes sense I guess.
+    Also, had a weird error where the css selector for an company stock symbol to click on gave the next stock after it instead of itself (element 1 being element 2 instead).
+    I solved the issue by using time.sleep(). I suspect the page not loading as fast as the program runs is causing errors. I plan on using time.sleep(50) tmrw to see if the
+    error "handshake failed; returned -1, blah blah blah" will go away if I let the page fully load. I'll add more time if needed to test. Selenium and/or Python seems very
+    slow.
+
+Day 1: 6/3/23
+Tasks:
+    1. Open https://www.nasdaq.com/market-activity/stocks/screener for the list of stocks 
+    Note: Can easily download a csv file from the page, but I think that defeats the purpose of learning Selenium
+Accomplished:
+    Finished task 1. Getting python to work was a pain, but I solved it by uninstalling the old python version 3.7.5 and installing the latest version
+    3.11.3 with env variable option checked. It had the "correct" path too, I think my old one was wrong for whatever reason 
