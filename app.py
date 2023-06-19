@@ -59,6 +59,9 @@ for t in range(1,3):
 
         driver.back()
 
+        #Scroll to top of page
+        driver.execute_script("window.scrollTo(0, 0)") 
+
         # Clicks NYSE Checkbox
         element = WebDriverWait(driver,2000,ignored_exceptions=ignored_exceptions)\
                     .until(EC.element_to_be_clickable((By.CSS_SELECTOR,".nasdaq-screener__radio-box--exchange-item-NYSE .radioCircle")))
@@ -69,7 +72,7 @@ for t in range(1,3):
 
         # Clicks Apply
         element = WebDriverWait(driver,2000,ignored_exceptions=ignored_exceptions)\
-                    .until(EC.element_to_be_clickable((By.CSS_SELECTOR,".nasdaq-screener__radio-box--exchange-item-NYSE .radioCircle")))
+                    .until(EC.element_to_be_clickable((By.CSS_SELECTOR,".nasdaq-screener__form-button--apply")))
         element.click()
 
         #if i === 25 go to next page and set i to 0.

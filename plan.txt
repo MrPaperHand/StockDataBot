@@ -1,3 +1,16 @@
+Day 13: 6/18/23
+Tasks:
+Accomplished:
+Notes:
+
+Day 12: 6/18/23
+Tasks: Fix Code is your only task buddy lol.
+Accomplished: Realized one of the click on to the apply was changed with a click NYSE checkbox. Fixed that. Trying to figure out why it still crashes when
+              I let it run. I guess clicking step by step through the debugger won't work for web automation stuff because of page loading and what not. 
+              The "DOM" as they so spookily call it. I suspect I'm still not using explicit wait correctly, but I'll be so happy once I finally figure it out.
+Notes: I should probably just copy paste this Day X: Tasks: etc stuff. Started uploading to github yesterday and will continue to day. I wanna see GREEEEEN. 
+
+
 Day 11: 6/15/23
 Accomplished:
     1. Learned the value of using breakpoints and debugging step by step... Embarrassing it took me 6 months after graduating with a acs degree 
