@@ -46,6 +46,7 @@ for t in range(1,3):
         if i >= 9:
             driver.execute_script("window.scrollTo(0,1000)")
 
+        time.sleep(1)
         element = WebDriverWait(driver,2000,ignored_exceptions=ignored_exceptions)\
                     .until(EC.element_to_be_clickable((By.CSS_SELECTOR,(f'.nasdaq-screener__row:nth-child({i}) > .nasdaq-screener__cell--name > .firstCell'))))
         element.click()

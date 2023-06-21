@@ -1,7 +1,14 @@
-Day 13: 6/18/23
+Day 14: 6/21/23
 Tasks:
 Accomplished:
 Notes:
+
+Day 13: 6/20/23
+Tasks: Fix Code is your only task buddy lol.
+Accomplished: Very little
+Notes: Man I don't know. Either I'm using explicit waits incorrectly or it's just inherrently very hard to get the program to run fully without crashing in 
+       web automation without completley fine tuning it. I think I'm going to take a break from using explicit waits and this project. I'll either clean up 
+       my code tmrw and put things into functions and whatnot or I'll just put the project on hold while I learn other QA stuff.
 
 Day 12: 6/18/23
 Tasks: Fix Code is your only task buddy lol.
